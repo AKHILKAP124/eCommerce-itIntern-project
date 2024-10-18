@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopeee</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#212121]">
+    <div class="nav">
+      <nav class="h-28 border-b-2 border-slate-400 px-72">
+        <div class="w-full h-full flex items-center justify-between">
+          <div class="logo">
+            <img
+              src="./assets/shopeee_logo.png"
+              alt="shopeee_logo"
+              class="w-48 cursor-pointer"
+            />
+          </div>
+          <div class="cart flex gap-2 items-center">
+            <img
+              src="./assets/pngegg (1).png"
+              alt="cart_img"
+              class="w-10 cursor-pointer"
+              onclick="ShowCart()"
+            />
+            <span
+            id="cart_items_value_length"  
+            class="bg-slate-500 w-7 h-7 rounded-full font-bold text-xl inline-block text-center"
+              >0</span
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main relative">
+      <main class="h-screen px-72">
+        <items class="items h-full bg-blue-00 p-16 flex flex-wrap gap-24">
+          <!-- <div class="item w-80 min-h-96 max-h-fit bg-black p-2 border- border-slate-600 rounded-md">
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/w/g/r/-original-imagxp8utj55gjnk.jpeg?q=70&crop=false"
+              alt=""
+              class="h-60 w-full object-contain"
+            />
+            <p class="text-slate-300 mt-3">
+              MICROSOFT S/X Wireless Controller Bluetooth Gamepad (Carbon Black,
+              For Xbox One, Xbox Series S, Xbox Series X)
+            </p>
+            <strong class="font-[Agdasima] text-2xl text-yellow-600 mt-3">Prize: $200</strong>
+            <div class="h-10 text-center text-2xl text-white bg-green-500 rounded-lg my-3 font-semibold cursor-pointer">Add to Cart</div>
+          </div> -->
+        </items>
+      </main>
+      <cart class="hidden w-96 h-fit bg-[#1d1d1d] absolute -top-6 right-72 p-4 rounded-lg border-2">
+
+        <cartitems class="max-h-72 min-h-20 overflow-auto flex flex-col gap-3 scrollbar-hide p">
+          <p class="my-5 msg font-semibold text-xl text-red-600 text-center">No items </p>
+        </cartitems>
+
+        <p id="total" class="text-green-500 text-lg font-semibold mt-2 ml-56"></p>
+
+        <div class="my-5 w-full h-12 rounded-lg bg-white text-center py-3 text-lg cursor-pointer" onclick="alert()">Checkout</div>
+
+      </cart>
+    </div> 
+    <script src="script.js"></script>
+  </body>
+</html>
